@@ -2,29 +2,28 @@
 
 import os
 import sys
-import request
-
+try:
+    import requests
+except:
+    print "faltan dependencias: requests"
 def filtrar(direccion):
     o = open("contenido", "w")
     o.write("\n")
     o.close()
     o = open(direccion , "r")
     i = 0
-	string = ""
-	etiqueta = ""
-	for x in o.read():
-		if i == 2:
-			i = 0
-
-		if x == "<":
-			i = 1
-
-		if x == ">":
-			i = 2
-
-		if i == 0:
-			string += x
-	print "."+string
+    string = ""
+    etiqueta = ""
+    for x in o.read():
+        if i == 2:
+            i = 0
+        if x == "<":
+            i = 1
+        if x == ">":
+            i = 2
+        if i == 0:
+            string += x
+    print "."+string
 
 	o.close()
 	o2 = open("contenido" , "w")
