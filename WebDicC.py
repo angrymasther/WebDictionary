@@ -24,7 +24,6 @@ def filtrar(direccion):
         if i == 0:
             string += x
     print "."+string
-
 	o.close()
 	o2 = open("contenido" , "w")
 	o2.write(string)
