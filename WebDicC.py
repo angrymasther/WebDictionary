@@ -65,3 +65,4 @@ def obtener(direccion, archivo):
 		os.system("rm "+nombre)
 	except IndexError:
 		print "Error con los parametros"
+obtener(sys.argv[1], sys.argv[2])
