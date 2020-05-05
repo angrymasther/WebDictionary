@@ -9,7 +9,7 @@ def filtrar(direccion):
     o.write("\n")
     o.close()
     o = open(direccion , "r")
-	i = 0
+    i = 0
 	string = ""
 	etiqueta = ""
 	for x in o.read():
