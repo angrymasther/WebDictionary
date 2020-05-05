@@ -59,7 +59,7 @@ def obtener(direccion, archivo):
 		for x in Palabras:
 			o.write(x)
 			o.write("\n")
-			print x
+			#print x
 		o.close()
 		os.system("rm contenido")
 		os.system("rm "+nombre)
