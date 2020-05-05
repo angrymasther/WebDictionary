@@ -10,7 +10,7 @@ def filtrar(direccion):
     o = open("contenido", "w")
     o.write("\n")
     o.close()
-    o.open(direccion, "w")
+    o = open(direccion, "w")
     o.write("\n")
     o.close()
     o = open(direccion , "r")
