@@ -14,14 +14,12 @@ def sacar_palabras_del_texto(texto):
     lista_palabras = []
     palabra = ""
     for caracter in texto:
-        if caracter == " " or caracter == " ":
+        if caracter == " ":
             if palabra not in lista_palabras:
-                lista_palabras.append(palabra)
+                lista_palabras.append(palabra.strip())
             palabra = ""
         palabra += caracter
     print "Lista de palabras creada"
-    for x in lista_palabras:
-        x = x.strip()
     return lista_palabras
 
 def cleanhtml(raw_html):
